@@ -13,7 +13,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        return http.authorizeHttpRequests(request->request.anyRequest().permitAll())
+        return http.authorizeHttpRequests(request->request.anyRequest().authenticated())
                 .oauth2ResourceServer(oauth->oauth.jwt(Customizer.withDefaults()))
                 .build();
     }
