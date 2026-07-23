@@ -1,5 +1,7 @@
-package com.sovon9.uaa_client_test.controller;
+package com.sovon9.uaa_resource_server.controller;
 
+import com.sovon9.uaa_resource_server.entity.Employee;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -33,6 +35,7 @@ public class TestController {
         employees.add(e3);
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @GetMapping("/employee/{id}")
     public Employee getEmployee(@PathVariable Long id)
     {

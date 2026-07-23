@@ -1,14 +1,13 @@
-package com.sovon9.uaa_client_test;
+package com.sovon9.uaa_resource_server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication // exclude = {DataSourceAutoConfiguration.class}
-public class UaaClientTestApplication {
+public class UaaResourceServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UaaClientTestApplication.class, args);
+		SpringApplication.run(UaaResourceServerApplication.class, args);
 	}
 
 }

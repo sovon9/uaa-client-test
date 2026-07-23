@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sovon9</groupId>
-	<artifactId>uaa-client-test</artifactId>
+	<artifactId>uaa-resource-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>uaa-client-test</name>
+	<name>uaa-resource-server</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -37,7 +37,6 @@
 		<dependency>
 			<groupId>com.sovon9</groupId>
 			<artifactId>spring-extensions</artifactId>
-
 			<version>0.0.2</version>
 			<exclusions>
 				<exclusion>
@@ -45,14 +44,6 @@
 					<artifactId>spring-boot-starter-data-jpa</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-oauth2-client</artifactId>-->
-<!--		</dependency>-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
 		</dependency>
 <!--		<dependency>-->
 <!--			<groupId>org.springframework.boot</groupId>-->

@@ -1,4 +1,4 @@
-package com.sovon9.uaa_client_test.controller;
+package com.sovon9.uaa_resource_server.entity;
 
 public class Employee {
 

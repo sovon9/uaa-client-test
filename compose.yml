@@ -10,8 +10,8 @@ services:
     networks:
       - service-network
 
-  uaa-client-test:
-    image: "sovon9/uaa-client-test"
+  uaa-resource-server:
+    image: "sovon9/uaa-resource-server"
     ports:
       - 8081:8081
     environment:
